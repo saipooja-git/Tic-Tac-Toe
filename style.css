@@ -1,0 +1,42 @@
+*{
+    margin: 1rem;
+    padding: 1rem;
+}
+html{
+    font-size: medium;
+    box-sizing: border-box;
+}
+body{
+    background-color: rgb(29, 187, 227);
+    font-family: 'Courier New', Courier, monospace;
+    line-height: 1rem;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: rgb(119, 79, 180);
+
+}
+h1{
+    font-size: 2rem;
+}
+#game-board{
+    display: grid;
+    grid-template-columns: repeat(3,100px);
+    grid-template-rows: repeat(3,100px);
+    color: black;
+    gap: 5px;
+    margin-top: 20px;
+}
+
+.cell{
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    width: 100px;
+    height: 100px;
+    background-color: white;
+    border: 1px solid #000;
+    font-size: 2em;
+    cursor: pointer;
+}
