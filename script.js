@@ -11,7 +11,7 @@ document.addEventListener("DOMContentLoaded", () => {
             if (board[index] === null) {
                 board[index] = currentPlayer;
                 cell.textContent = currentPlayer;
-                if (checkWinner(currentPlayer)) {
+              setTimeout(() =>{ if (checkWinner(currentPlayer)) {
                     alert(`${currentPlayer} wins!`);
                     resetBoard();
                 } else if (board.every(cell => cell !== null)) {
@@ -20,6 +20,7 @@ document.addEventListener("DOMContentLoaded", () => {
                 } else {
                     currentPlayer = currentPlayer === "X" ? "O" : "X";
                 }
+            } ,100);
             }
         });
     });

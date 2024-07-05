@@ -6,6 +6,10 @@ html{
     font-size: medium;
     box-sizing: border-box;
 }
+h1{
+    justify-content: flex-start;
+    font-size: 2rem;
+}
 body{
     background-color: rgb(29, 187, 227);
     font-family: 'Courier New', Courier, monospace;
@@ -15,12 +19,19 @@ body{
     align-items: center;
     justify-content: center;
     color: rgb(119, 79, 180);
+    height: 100vh;
+    padding: 0;
+    margin: 0;
 
 }
-h1{
-    font-size: 2rem;
-}
+
 #game-board{
+    /* padding-left: 30rem; */
+    /* padding-top: 70 rem;
+    padding-right: 10rem;
+    padding-bottom: 20rem; */
+    justify-content: center;
+    align-items: center;
     display: grid;
     grid-template-columns: repeat(3,100px);
     grid-template-rows: repeat(3,100px);
@@ -39,4 +50,11 @@ h1{
     border: 1px solid #000;
     font-size: 2em;
     cursor: pointer;
+}
+
+@media screen and  (min-width: 630px)  {
+body{
+    justify-content: center;
+}
+    
 }
