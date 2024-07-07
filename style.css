@@ -56,5 +56,47 @@ body{
 body{
     justify-content: center;
 }
-    
+}
+
+/* For mobile phones */
+@media screen and (max-width: 480px) {
+    body {
+        justify-content: center;
+        padding: 1rem;
+    }
+
+    #game-board {
+        grid-template-columns: repeat(3, 80px);
+        grid-template-rows: repeat(3, 80px);
+        gap: 3px;
+        margin-top: 10px;
+    }
+
+    .cell {
+        width: 80px;
+        height: 80px;
+        font-size: 1.5em;
+    }
+
+    h1 {
+        font-size: 1.5rem;
+        justify-content: center;
+    }
+}
+
+/* For medium screens */
+@media screen and (min-width: 630px) {
+    body {
+        justify-content: center;
+    }
+}
+
+/* For large screens */
+@media screen and (min-width: 1920px) {
+    h1 {
+        justify-content: top;
+    }
+    body {
+        justify-content: center;
+    }
 }
